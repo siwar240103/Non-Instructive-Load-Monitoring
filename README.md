@@ -51,17 +51,7 @@ Both are computed on the labeled test windows, with all novel-appliance levels p
 
 The test period is split into three equal sub-periods: (1) known aggregate only, (2) + low-power appliance, (3) + high-power appliance. The notebooks plot the signal in watts with the zones detected as anomalous, along with detailed diagnostics (score, state of the injected appliance, input vs. reconstruction).
 
-## Results (reference run)
-
-**ROC-AUC / PR-AUC per novel appliance** (about 6% positive windows):
-
-| Model | Microwave (low) ROC-AUC | Microwave PR-AUC | Kettle (high) ROC-AUC | Kettle PR-AUC | Pooled ROC-AUC |
-|---|---|---|---|---|---|
-| USAD | 0.964 | 0.457 | 0.977 | 0.509 | 0.970 |
-| VAE | 0.972 | 0.573 | **0.989** | **0.815** | **0.981** |
-| GRU-AE | **0.978** | **0.659** | 0.985 | 0.763 | **0.981** |
-
-**Operating points on the pooled test data:**
+## Results (reference run)| 
 
 | Model | Threshold 1: FPR | Threshold 1: TPR | Threshold 2: FPR | Threshold 2: TPR | Threshold 2: F1 |
 |---|---|---|---|---|---|
