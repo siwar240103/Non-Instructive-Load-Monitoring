@@ -51,7 +51,7 @@ Both are computed on the labeled test windows, with all novel-appliance levels p
 
 The test period is split into three equal sub-periods: (1) known aggregate only, (2) + low-power appliance, (3) + high-power appliance. The notebooks plot the signal in watts with the zones detected as anomalous, along with detailed diagnostics (score, state of the injected appliance, input vs. reconstruction).
 
-## Results (reference run)| 
+## Results 
 
 | Model | Threshold 1: FPR | Threshold 1: TPR | Threshold 2: FPR | Threshold 2: TPR | Threshold 2: F1 |
 |---|---|---|---|---|---|
