@@ -51,16 +51,7 @@ Both are computed on the labeled test windows, with all novel-appliance levels p
 
 The test period is split into three equal sub-periods: (1) known aggregate only, (2) + low-power appliance, (3) + high-power appliance. The notebooks plot the signal in watts with the zones detected as anomalous, along with detailed diagnostics (score, state of the injected appliance, input vs. reconstruction).
 
-## Results 
 
-| Model | Threshold 1: FPR | Threshold 1: TPR | Threshold 2: FPR | Threshold 2: TPR | Threshold 2: F1 |
-|---|---|---|---|---|---|
-| USAD | 0.054 | 0.986 | 0.036 | 0.924 | 0.743 |
-| VAE | 0.079 | 0.989 | 0.038 | 0.876 | 0.711 |
-| GRU-AE | 0.098 | 0.995 | 0.026 | 0.808 | 0.730 |
-
-All three models detect the novel appliance well (ROC-AUC > 0.96). The "low-power" case is the hardest, as expected. PR-AUC remains modest because only ~6% of windows are positive: it should be read against that base rate.
--determinism).
 
 ## References
 
